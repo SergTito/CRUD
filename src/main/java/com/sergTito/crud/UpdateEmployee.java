@@ -47,16 +47,15 @@ public class UpdateEmployee {
             throw new HibernateException("Что то пошел не так ", e);
         }
     }
-    public void updateAll(){
-        try (Session session = SESSION_FACTORY.getCurrentSession()) {
-            session.beginTransaction();
-
-            session.createQuery("update Employee set salary = 1245"+
-                                "Where name = 'Margarita'").executeUpdate();
-
-            session.getTransaction().commit();
-        } catch (HibernateException e) {
-            throw new HibernateException("Что то пошел не так ", e);
-        }
-    }
+//    public void updateAll(){
+//        try (Session session = SESSION_FACTORY.getCurrentSession()) {
+//            session.beginTransaction();
+//
+//            session.createQuery("update Employee set salary = 1245").executeUpdate();
+//
+//            session.getTransaction().commit();
+//        } catch (HibernateException e) {
+//            throw new HibernateException("Что то пошел не так ", e);
+//        }
+//    }
 }

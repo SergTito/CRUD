@@ -2,6 +2,7 @@ package com.sergTito;
 
 
 import com.sergTito.crud.CreateAndGetNewEmployee;
+import com.sergTito.crud.DeleteEmployee;
 import com.sergTito.crud.ReadEmployee;
 import com.sergTito.crud.UpdateEmployee;
 
@@ -20,5 +21,8 @@ public class Main {
         updateEmployee.update(0,15233);
 //        updateEmployee.updateAll();
 
+
+        DeleteEmployee deleteEmployee = new DeleteEmployee();
+        deleteEmployee.delete(6);
     }
 }
